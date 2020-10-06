@@ -83,7 +83,9 @@ Agora temos tudo para fazermos o carrossel, então vamos editar nosso HTML, ent�
 </mat-carousel>
 ```
 
-## Atributos do carrossel
+# Atributos do carrossel
+
+## mat-carousel
 
 <table>
 <thead>
@@ -197,6 +199,48 @@ Agora temos tudo para fazermos o carrossel, então vamos editar nosso HTML, ent�
 <br>
 <br>
 
+## mat-carousel-slide
+
+<table>
+<thead>
+<tr>
+<th>Entrada</th>
+<th>Tipo</th>
+<th>Descrição</th>
+<th style="text-align:center;">Valor padrão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>image</code></td>
+<td><code>string</code></td>
+<td>Imagem exibida no slide.</td>
+<td style="text-align:center;"></td>
+</tr>
+<tr>
+<td><code>overlayColor</code></td>
+<td><code>string</code></td>
+<td>Cor da sobreposição do slide.</td>
+<td style="text-align:center;"><code>'#00000040'</code></td>
+</tr>
+<tr>
+<td><code>hideOverlay</code></td>
+<td><code>boolean</code></td>
+<td>Ative/desative a sobreposição.</td>
+<td style="text-align:center;"><code>false</code></td>
+</tr>
+<tr>
+<td><code>disabled</code></td>
+<td><code>boolean</code></td>
+<td>Pule o slide ao navegar.</td>
+<td style="text-align:center;"><code>false</code></td>
+</tr>
+</tbody>
+</table>
+
+<br>
+<br>
+
 ## Referências - links
 * https://therichpost.com/angular-9-material-carousel-slider/
 * https://gsr.dev/material2-carousel/
@@ -291,6 +335,10 @@ Now we have everything to make the carousel, so let's edit our HTML, so enter th
 
 </mat-carousel>
 ```
+
+# Carousel attributes
+
+## mat-carousel
 
 <table>
 <thead>
@@ -397,6 +445,47 @@ Now we have everything to make the carousel, so let's edit our HTML, so enter th
 <td><code>SvgIconOverrides</code></td>
 <td>Override default carousel icons with registered SVG icons.</td>
 <td style="text-align:center;"></td>
+</tr>
+</tbody>
+</table>
+
+<br>
+
+## mat-carousel-slide
+
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Type</th>
+<th>Description</th>
+<th style="text-align:center;">Default value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>image</code></td>
+<td><code>string</code></td>
+<td>Image displayed in the slide.</td>
+<td style="text-align:center;"></td>
+</tr>
+<tr>
+<td><code>overlayColor</code></td>
+<td><code>string</code></td>
+<td>Color of the slide's overlay.</td>
+<td style="text-align:center;"><code>'#00000040'</code></td>
+</tr>
+<tr>
+<td><code>hideOverlay</code></td>
+<td><code>boolean</code></td>
+<td>Toggle overlay on/off.</td>
+<td style="text-align:center;"><code>false</code></td>
+</tr>
+<tr>
+<td><code>disabled</code></td>
+<td><code>boolean</code></td>
+<td>Skip slide when navigating.</td>
+<td style="text-align:center;"><code>false</code></td>
 </tr>
 </tbody>
 </table>
