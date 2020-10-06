@@ -83,10 +83,128 @@ Agora temos tudo para fazermos o carrossel, então vamos editar nosso HTML, ent�
 </mat-carousel>
 ```
 
-## Referência
-Link: https://therichpost.com/angular-9-material-carousel-slider/
+## Atributos do carrossel
 
+<table>
+<thead>
+<tr>
+<th>Entrada</th>
+<th>Tipo</th>
+<th>Descrição</th>
+<th style="text-align:center;">Valor padrão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>timings</code></td>
+<td><code>string</code></td>
+<td>Tempo para animação de slides.</td>
+<td style="text-align:center;"><code>'250ms ease-in'</code></td>
+</tr>
+<tr>
+<td><code>autoplay</code></td>
+<td><code>boolean</code></td>
+<td>Ative o deslizamento automático.</td>
+<td style="text-align:center;"><code>true</code></td>
+</tr>
+<tr>
+<td><code>interval</code></td>
+<td><code>number</code></td>
+<td>Tempo para o slide passar automaticamente - se refere ao autoplay, medido em segundos * 1000.</td>
+<td style="text-align:center;"><code>5000</code></td>
+</tr>
+<tr>
+<td><code>loop</code></td>
+<td><code>boolean</code></td>
+<td>Loop, quando chegar no final, volta para o começo.</td>
+<td style="text-align:center;"><code>true</code></td>
+</tr>
+<tr>
+<td><code>hideArrows</code></td>
+<td><code>boolean</code></td>
+<td>	Oculte as setas de navegação.</td>
+<td style="text-align:center;"><code>false</code></td>
+</tr>
+<tr>
+<td><code>hideIndicators</code></td>
+<td><code>boolean</code></td>
+<td>Oculte os indicadores de navegação - as bolinhas que fica na parte inferior do carrossel.</td>
+<td style="text-align:center;"><code>false</code></td>
+</tr>
+<tr>
+<td><code>color</code></td>
+<td><code>ThemePalette</code></td>
+<td>Paleta de cores de Material - cores disponíveis: primary (azul), accent (amarelo), warn (vermelho) - <code>mas depende do tema que você escolheu ao baixar o material</code>.</td>
+<td style="text-align:center;"><code>'accent'</code></td>
+</tr>
+<tr>
+<td><code>maxWidth</code></td>
+<td><code>string</code></td>
+<td>Largura máxima.</td>
+<td style="text-align:center;"><code>'auto'</code></td>
+</tr>
+<tr>
+<td><code>maintainAspectRatio</code></td>
+<td><code>boolean</code></td>
+<td>Se verdadeiro, use <code>proportion</code> para determinar a altura, senão <code>slideHeight</code> é usado.</td>
+<td style="text-align:center;"><code>true</code></td>
+</tr>
+<tr>
+<td><code>proportion</code></td>
+<td><code>number</code></td>
+<td>Proporção da altura em comparação com a largura.</td>
+<td style="text-align:center;"><code>25</code></td>
+</tr>
+<tr>
+<td><code>slideHeight</code></td>
+<td><code>string</code></td>
+<td>Altura explícita do slide. Usado quando keepAspectRatio for false.</td>
+<td style="text-align:center;"><code>'100%'</code></td>
+</tr>
+<tr>
+<td><code>slides</code></td>
+<td><code>number</code></td>
+<td>Quantidade máxima de slides exibidos.</td>
+<td style="text-align:center;"></td>
+</tr>
+<tr>
+<td><code>useKeyboard</code></td>
+<td><code>boolean</code></td>
+<td>Ative a navegação pelo teclado.</td>
+<td style="text-align:center;"><code>true</code></td>
+</tr>
+<tr>
+<td><code>useMouseWheel</code></td>
+<td><code>boolean</code></td>
+<td>Ative a navegação por meio da roda do mouse.</td>
+<td style="text-align:center;"><code>false</code></td>
+</tr>
+<tr>
+<td><code>orientation</code></td>
+<td><code>Orientation</code></td>
+<td>Orientação do painel deslizante.</td>
+<td style="text-align:center;"><code>'ltr'</code></td>
+</tr>
+<tr>
+<td><code>svgIconOverrides</code></td>
+<td><code>SvgIconOverrides</code></td>
+<td>Substitua os ícones de carrossel padrão por ícones SVG registrados.</td>
+<td style="text-align:center;"></td>
+</tr>
+</tbody>
+</table>
+
+<br>
+<br>
+
+## Referências - links
+* https://therichpost.com/angular-9-material-carousel-slider/
+* https://gsr.dev/material2-carousel/
+* https://www.npmjs.com/package/@ngmodule/material-carousel
+
+<br>
 <hr>
+<br>
 
 # How to make a carousel in Angular - Using material design
 
@@ -174,5 +292,116 @@ Now we have everything to make the carousel, so let's edit our HTML, so enter th
 </mat-carousel>
 ```
 
-## Reference
-Link: https://therichpost.com/angular-9-material-carousel-slider/
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Type</th>
+<th>Description</th>
+<th style="text-align:center;">Default value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>timings</code></td>
+<td><code>string</code></td>
+<td>Timings for slide animation.</td>
+<td style="text-align:center;"><code>'250ms ease-in'</code></td>
+</tr>
+<tr>
+<td><code>autoplay</code></td>
+<td><code>boolean</code></td>
+<td>Enable automatic sliding.</td>
+<td style="text-align:center;"><code>true</code></td>
+</tr>
+<tr>
+<td><code>interval</code></td>
+<td><code>number</code></td>
+<td>Autoplay's interval in milliseconds.</td>
+<td style="text-align:center;"><code>5000</code></td>
+</tr>
+<tr>
+<td><code>loop</code></td>
+<td><code>boolean</code></td>
+<td>Enable loop through arrows.</td>
+<td style="text-align:center;"><code>true</code></td>
+</tr>
+<tr>
+<td><code>hideArrows</code></td>
+<td><code>boolean</code></td>
+<td>Hide navigation arrows.</td>
+<td style="text-align:center;"><code>false</code></td>
+</tr>
+<tr>
+<td><code>hideIndicators</code></td>
+<td><code>boolean</code></td>
+<td>Hide navigation indicators.</td>
+<td style="text-align:center;"><code>false</code></td>
+</tr>
+<tr>
+<td><code>color</code></td>
+<td><code>ThemePalette</code></td>
+<td>Color palette from Material.</td>
+<td style="text-align:center;"><code>'accent'</code></td>
+</tr>
+<tr>
+<td><code>maxWidth</code></td>
+<td><code>string</code></td>
+<td>Maximum width.</td>
+<td style="text-align:center;"><code>'auto'</code></td>
+</tr>
+<tr>
+<td><code>maintainAspectRatio</code></td>
+<td><code>boolean</code></td>
+<td>If true, use <code>proportion</code> to determine height, else <code>slideHeight</code> is used.</td>
+<td style="text-align:center;"><code>true</code></td>
+</tr>
+<tr>
+<td><code>proportion</code></td>
+<td><code>number</code></td>
+<td>Height proportion compared to width.</td>
+<td style="text-align:center;"><code>25</code></td>
+</tr>
+<tr>
+<td><code>slideHeight</code></td>
+<td><code>string</code></td>
+<td>Explicit slide height. Used when maintainAspectRatio is false.</td>
+<td style="text-align:center;"><code>'100%'</code></td>
+</tr>
+<tr>
+<td><code>slides</code></td>
+<td><code>number</code></td>
+<td>Maximum amount of displayed slides.</td>
+<td style="text-align:center;"></td>
+</tr>
+<tr>
+<td><code>useKeyboard</code></td>
+<td><code>boolean</code></td>
+<td>Enable keyboard navigation.</td>
+<td style="text-align:center;"><code>true</code></td>
+</tr>
+<tr>
+<td><code>useMouseWheel</code></td>
+<td><code>boolean</code></td>
+<td>Enable navigation through mouse wheeling.</td>
+<td style="text-align:center;"><code>false</code></td>
+</tr>
+<tr>
+<td><code>orientation</code></td>
+<td><code>Orientation</code></td>
+<td>Orientation of the sliding panel.</td>
+<td style="text-align:center;"><code>'ltr'</code></td>
+</tr>
+<tr>
+<td><code>svgIconOverrides</code></td>
+<td><code>SvgIconOverrides</code></td>
+<td>Override default carousel icons with registered SVG icons.</td>
+<td style="text-align:center;"></td>
+</tr>
+</tbody>
+</table>
+
+## References - links
+* https://therichpost.com/angular-9-material-carousel-slider/
+* https://gsr.dev/material2-carousel/
+* https://www.npmjs.com/package/@ngmodule/material-carousel
